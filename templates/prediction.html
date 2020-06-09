@@ -14,13 +14,13 @@
 
 <body>
 
- <div class="login container-fluid">
+ <div class="login container-fluid" width="100%" height="100%">
 	<h1>Crop Analysis</h1>
    {{ prediction_text }}
    <br>
    <br>
 <div>
-    <img height="1000px" width="600px" src="data:image/png;base64, {{ plot_url }}" class = "img-responsive">
+    <img src="data:image/png;base64, {{ plot_url }}" class = "img-responsive">
 
 </div>
  </div>
