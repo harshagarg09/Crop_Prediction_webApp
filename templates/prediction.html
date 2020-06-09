@@ -16,22 +16,11 @@
 
  <div class="login container">
 	<h1>Crop Analysis</h1>
-
-     <!-- Main Input For Receiving Query to our ML 
-    <form action="{{ url_for('predict')}}"method="get">
-    	<input type="text" name="experience" placeholder="Experience" required="required" value="" />
-        <input type="text" name="test_score" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
--->
-   
    {{ prediction_text }}
    <br>
    <br>
 <div>
-    <img  src="data:image/png;base64, {{ plot_url }}" class = "img-fluid">
+    <img  src="data:image/png;base64, {{ plot_url }}" class = "img-responsive">
 
 </div>
  </div>
